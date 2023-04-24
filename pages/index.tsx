@@ -16,7 +16,7 @@ export default function Home() {
       <SiteHead />
       <Navbar />
 
-      <main className={`${styles.main} ${inter.className}`}>
+      <main className={`${inter.className} ${styles.main}`}>
         {cards?.map((card, idx) => (
           <Card card={card} key={`${idx}-${card?.id}`} />
         ))}

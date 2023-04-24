@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 const Navbar = () => {
   const [activeMenuItem, setActiveMenuItem] = useState<String>("");
@@ -7,8 +10,8 @@ const Navbar = () => {
   const handleMenuClick = (menuItem: string) => setActiveMenuItem(menuItem);
 
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.navbar__logo}>Logo</div>
+    <nav className={`${inter.className} ${styles.navbar}`}>
+      <h1 className={styles.navbar__logo}>Logo</h1>
 
       <input
         className={styles.navbar__search}
