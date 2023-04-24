@@ -1,0 +1,48 @@
+:root {
+  // Background colors
+  --background-color: #f7f7fa;
+  --white-color: #fff;
+  --black-color: #000;
+  --success-color: #38ae04;
+  --regular-black: #404553;
+  --gray-color: #9ba0b1;
+
+  // Border
+  --default-border: 1px solid #f4f4f5;
+
+  // Generic sizes
+  --size-2: 0.125rem;
+  --size-4: 0.25rem;
+  --size-8: 0.5rem;
+  --size-12: 0.75rem;
+  --size-14: 0.875rem;
+  --size-16: 1rem;
+  --size-18: 1.125rem;
+  --size-20: 1.25rem;
+  --size-24: 1.5rem;
+  --size-32: 2rem;
+  --size-64: 4rem;
+  --size-50: 50%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
