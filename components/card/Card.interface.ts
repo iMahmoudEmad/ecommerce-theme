@@ -16,7 +16,7 @@ export default interface CardI {
     logo: string;
   };
   rate: {
-    totalStars: number | string;
+    totalStars: string;
     totalPeopleRates: string;
   };
   coupon: string;
