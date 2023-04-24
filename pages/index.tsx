@@ -1,10 +1,10 @@
-// import { Inter } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import styles from "@/styles/Home.module.scss";
 import { SiteHead } from "@/components/SiteHead";
 import { Card } from "@/components/card/Card";
 import Navbar from "@/components/navbar/Navbar";
 
-// const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <SiteHead />
       <Navbar />
       
-      <main className={styles.main}>
+      <main className={`${styles.main} ${inter.className}`}>
         <Card />
       </main>
     </>
