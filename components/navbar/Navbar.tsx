@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +12,9 @@ const Navbar = () => {
 
   return (
     <nav className={`${inter.className} ${styles.navbar}`}>
-      <h1 className={styles.navbar__logo}>Logo</h1>
+      <h1 className={styles.navbar__logo}>
+        <Link href="/">Logo</Link>
+      </h1>
 
       <input
         className={styles.navbar__search}
