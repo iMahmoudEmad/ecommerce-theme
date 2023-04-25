@@ -1,4 +1,8 @@
 import { Inter } from "next/font/google";
+import { v4 } from "uuid";
+import Link from "next/link";
+import Image from "next/image";
+import { SwiperSlide } from "swiper/react";
 import styles from "@/styles/Home.module.scss";
 import { SiteHead } from "@/components/SiteHead";
 import { Card } from "@/components/card/Card";
@@ -8,11 +12,7 @@ import CardI from "@/components/card/Card.interface";
 import { Slider } from "@/components/slider/Slider";
 import SliderI from "@/components/slider/Slider.interface";
 import { SliderC } from "@/components/slider/Slider.constant";
-import { v4 } from "uuid";
-import Link from "next/link";
-import Image from "next/image";
 import sliderStyles from "@/components/slider/Slider.module.scss";
-import { SwiperSlide } from "swiper/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
