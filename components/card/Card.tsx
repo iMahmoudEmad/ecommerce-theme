@@ -68,6 +68,8 @@ export const Card = ({ card }: { card: CardI }) => (
       </div>
 
       <div className={styles.coupon}>{card?.coupon}</div>
+
+      <button type="button">Buy now</button>
     </div>
   </Link>
 );
